@@ -231,7 +231,7 @@ export default function ProductSection() {
               className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-border/40"
             >
               <img
-                src="/assets/gallery_new_4.webp"
+                src="/assets/gallery_showcase_1.webp"
                 alt="House"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
