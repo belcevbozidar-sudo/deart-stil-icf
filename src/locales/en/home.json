@@ -106,5 +106,8 @@
   "products.specUnit.kgm3": "kg/m³",
   "manufacturing.altFactory1": "Modern manufacturing plant",
   "manufacturing.altFactory2": "EPS block manufacturing equipment",
-  "manufacturing.certCeMarking": "CE Marking"
+  "manufacturing.certCeMarking": "CE Marking",
+  "products.galleryTitle": "Our Projects and Production",
+  "products.gallerySubtitle": "See some of the completed projects with ICF blocks and our warehouse space.",
+  "products.viewGallery": "View Gallery"
 }

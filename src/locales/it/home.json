@@ -106,5 +106,8 @@
   "products.specUnit.kgm3": "kg/m³",
   "manufacturing.altFactory1": "Stabilimento produttivo moderno",
   "manufacturing.altFactory2": "Attrezzature per la produzione di blocchi EPS",
-  "manufacturing.certCeMarking": "Marchio CE"
+  "manufacturing.certCeMarking": "Marchio CE",
+  "products.galleryTitle": "I nostri progetti e produzione",
+  "products.gallerySubtitle": "Scopri alcuni dei progetti realizzati con blocchi ICF e il nostro magazzino.",
+  "products.viewGallery": "Vedi galleria"
 }

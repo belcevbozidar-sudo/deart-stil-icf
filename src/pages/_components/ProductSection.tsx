@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import BrandLogo from "@/components/BrandLogo.tsx";
 import { useTranslation } from "react-i18next";
+import { Link, useParams } from "react-router-dom";
 
 const PRODUCT_IMAGE_SRCS = [
   "/assets/file_75EcGnlf8pY3Asw2s1s2nElf.jpg",
@@ -21,6 +22,7 @@ const HOUSE_IMAGE =
 export default function ProductSection() {
   const { t } = useTranslation("home");
   const { t: tc } = useTranslation("common");
+  const { lng } = useParams<{ lng: string }>();
 
   const PRODUCT_IMAGES = [
     { src: PRODUCT_IMAGE_SRCS[0], alt: t("products.altProduct1") },
@@ -201,6 +203,83 @@ export default function ProductSection() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* Shuffled/Selected project showcase section */}
+        <div className="mt-16 sm:mt-20 lg:mt-28">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-3xl mx-auto mb-10 sm:mb-12"
+          >
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-foreground mb-3 sm:mb-4">
+              {t("products.galleryTitle")}
+            </h3>
+            <p className="text-xs sm:text-sm lg:text-base text-muted-foreground leading-relaxed">
+              {t("products.gallerySubtitle")}
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5 }}
+              className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-border/40"
+            >
+              <img
+                src="/assets/gallery_new_4.webp"
+                alt="House"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-border/40"
+            >
+              <img
+                src="/assets/gallery_new_8.webp"
+                alt="Warehouse"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-border/40"
+            >
+              <img
+                src="/assets/gallery_new_6.webp"
+                alt="Building"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="flex justify-center mt-8 sm:mt-10"
+          >
+            <Link
+              to={`/${lng}/gallery`}
+              className="inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-3.5 text-sm font-bold text-primary-foreground shadow-xl shadow-primary/20 hover:shadow-primary/35 transition-all hover:scale-[1.03]"
+            >
+              {t("products.viewGallery")}
+            </Link>
+          </motion.div>
         </div>
 
         {/* Energy-efficient house showcase - responsive layout */}

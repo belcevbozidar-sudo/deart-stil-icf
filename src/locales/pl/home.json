@@ -106,5 +106,8 @@
   "products.specUnit.kgm3": "kg/m³",
   "manufacturing.altFactory1": "Nowoczesna fabryka produkcyjna",
   "manufacturing.altFactory2": "Sprzęt do produkcji bloków EPS",
-  "manufacturing.certCeMarking": "Oznakowanie CE"
+  "manufacturing.certCeMarking": "Oznakowanie CE",
+  "products.galleryTitle": "Nasze projekty i produkcja",
+  "products.gallerySubtitle": "Zobacz niektóre ze zrealizowanych projektów z bloczkami ICF i naszą przestrzeń magazynową.",
+  "products.viewGallery": "Zobacz galerię"
 }

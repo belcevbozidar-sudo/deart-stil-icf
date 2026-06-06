@@ -106,5 +106,8 @@
   "products.specUnit.kgm3": "кг/м³",
   "manufacturing.altFactory1": "Современный производственный завод",
   "manufacturing.altFactory2": "Оборудование для производства EPS блоков",
-  "manufacturing.certCeMarking": "CE Маркировка"
+  "manufacturing.certCeMarking": "CE Маркировка",
+  "products.galleryTitle": "Наши проекты и производство",
+  "products.gallerySubtitle": "Посмотрите на некоторые из завершенных проектов с блоками ICF и наше складское пространство.",
+  "products.viewGallery": "Посмотреть галерею"
 }
