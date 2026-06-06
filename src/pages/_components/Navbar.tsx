@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { useTranslation } from "react-i18next";
 import LocaleSwitcher from "@/components/locale-switcher.tsx";
 
-const DEART_LOGO = "/assets/file_g4PlvsMgC5S789RfE6QWfIZW.png";
+const DEART_LOGO = "/assets/logo.png";
 
 const NAV_LINKS = [
   { key: "nav.home", href: "#hero" },
